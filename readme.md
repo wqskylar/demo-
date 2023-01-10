@@ -2,5 +2,5 @@
 
 ## 项目合集列表
 
-### js项目
-- 实现Calculator
+### demo级项目
+- **实现Calculator**：H5+C3+JS
