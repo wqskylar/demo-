@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('font/iconfont.woff2') format('woff2'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: purple;
+  font-size: 80px;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 800px;
+  border-radius: 2%;
+  background: linear-gradient(160deg, #27c2b7 0%, #7436a6 100%);
+  margin: 50px auto 0;
+}
+#card-container .card {
+  flex-grow: 1;
+  margin: 2.5%;
+  width: 20%;
+  height: 20%;
+  border-radius: 10%;
+  cursor: pointer;
+  font-size: 86px;
+  text-align: center;
+  line-height: 155px;
+}
+.title {
+  text-align: center;
+}
+.title button {
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease-in-out;
+}
+.title button:hover {
+  transform: translateY(-3px);
+}
+.title button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.start {
+  background: #2e3d49;
+  color: #2e3d49;
+  user-select: none;
+}
+.choose {
+  background: skyblue;
+  color: white;
+  pointer-events: none;
+}
+.confirm {
+  background-color: green;
+  color: white;
+  pointer-events: none;
+}
+.won {
+  display: none;
+}
+.animate {
+  animation: scale 1s forwards;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
